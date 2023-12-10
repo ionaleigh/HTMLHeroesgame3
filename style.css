@@ -1,0 +1,117 @@
+/*
+  CSS File
+/
+
+/
+ VARIABLES
+*/
+*{
+  font-family: 'Press Start 2P', monospace; 
+}
+
+:root {
+  /* / Core colours /
+  / https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557 / */
+  --colour-amaranth: #e63946;
+  --colour-peppermint: #f1faee;
+  --colour-aquaisland: #a8dadc;
+  --colour-wedgewood: #457b9d;
+  --colour-cello: #1d3557;
+
+  /* / Header configuration / */
+  --header-heading-colour: var(--colour-peppermint);
+
+  /* / Body configuration / */
+  --body-default-colour: var(--colour-peppermint);
+  --body-background-colour: var(--colour-cello);
+}
+
+/* /
+  PAGE / BODY
+/ */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 200px;
+  background: url("./images/CampfireBlog.jpg") center no-repeat;
+
+}
+h1 {
+  margin-bottom: 50px;
+  color: #d68f25;
+  text-shadow: -2px 2px 0px #000000;
+}
+
+.Tablet {
+  position: relative;
+  display: inline-block;
+}
+
+.itself{
+  max-height: 300px;
+}
+
+#Buttons {
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+
+  transform: translate(-50%, -40%); 
+  text-align: center;
+  display: grid;
+  gap: 10px; 
+  grid-template-columns: repeat(2, auto);
+  border-radius: 10px;
+  font-size: 10px;
+}
+
+.but{
+  font-family: monospace;
+  text-shadow: -2px 2px 0px #000000;
+  background-color: #d68f25;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  cursor: pointer;
+  box-shadow: -2px 2px 0px #000000;;
+}.but:hover{
+  background-color: #bd6c1b;
+}.but:active{
+  background-color: #d68f25;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#scene {
+  text-shadow: -2px 2px 0px #000000;
+  font-family: monospace;
+  position: absolute;
+  top: 30%; 
+  left: 50%; 
+  transform: translate(-145px, -40px); 
+  color: white; 
+  text-align: center;
+  width: 300px; 
+  height: 100px;
+  font-size: 10px;
+}
+
+
+/* /
+  Screen reader text utility class
+*/ 
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
